@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <RootNamespace>O9d.Json.Formatting</RootNamespace>
+    <AssemblyName>O9d.Json.Formatting</AssemblyName>
+    <PackageId>O9d.Json.Formatting</PackageId>
+    <Description>Snake case formatting support for System.Text.Json</Description>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.4.0" PrivateAssets="All"/>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icon.png" Pack="true" PackagePath="\"/>
+</ItemGroup>
+</Project>
