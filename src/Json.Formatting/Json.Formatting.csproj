@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net5.0;</TargetFrameworks>
     <RootNamespace>O9d.Json.Formatting</RootNamespace>
     <AssemblyName>O9d.Json.Formatting</AssemblyName>
     <PackageId>O9d.Json.Formatting</PackageId>
@@ -9,8 +9,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MinVer" Version="2.4.0" PrivateAssets="All"/>
+    <PackageReference Condition="'$(TargetFramework)' == 'netstandard2.0'" Include="System.Text.Json" Version="5.0.2"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\icon.png" Pack="true" PackagePath="\"/>
-</ItemGroup>
+  </ItemGroup>
 </Project>
