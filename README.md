@@ -10,6 +10,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/benfoster/o9d-json/badge.svg?branch=main)](https://coveralls.io/github/benfoster/o9d-json?branch=main)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=benfoster_o9d-json&metric=alert_status)](https://sonarcloud.io/dashboard?id=benfoster_o9d-json)
 
+
 Extensions for [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=net-5.0).
 
 ## Quick Start
