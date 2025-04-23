@@ -26,11 +26,13 @@ namespace O9d.Json.Formatting.Tests
         [InlineData("already_snake_case_", "already_snake_case_ ")]
         [InlineData("is_json_property", "IsJSONProperty")]
         [InlineData("shouting_case", "SHOUTING_CASE")]
+        [InlineData("abc_test", "ABC Test")]
+        [InlineData("abc_def_test", "ABC DEF Test")]
         [InlineData("9999-12-31_t23:59:59.9999999_z", "9999-12-31T23:59:59.9999999Z")]
         [InlineData("hi!!_this_is_text._time_to_test.", "Hi!! This is text. Time to test.")]
         public static void Can_convert_to_snake_case(string expected, string input)
         {
-            Assert.Equal(input.ToSnakeCase(), expected);
+            Assert.Equal(expected, input.ToSnakeCase());
         }
     }
 }
